@@ -3,248 +3,264 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R 7 0 R] /Count 5 >>
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R] /Count 4 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R /F2 9 0 R >> >> /MediaBox [0 0 612 792] /Contents 10 0 R >>
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 9 0 R >>
 endobj
 4 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R /F2 9 0 R >> >> /MediaBox [0 0 612 792] /Contents 11 0 R >>
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 10 0 R >>
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R /F2 9 0 R >> >> /MediaBox [0 0 612 792] /Contents 12 0 R >>
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 11 0 R >>
 endobj
 6 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R /F2 9 0 R >> >> /MediaBox [0 0 612 792] /Contents 13 0 R >>
-endobj
-7 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R /F2 9 0 R >> >> /MediaBox [0 0 612 792] /Contents 14 0 R >>
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 12 0 R >>
 endobj
 8 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
-endobj
-9 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
-10 0 obj
-<< /Length 1100 >>
+9 0 obj
+<< /Length 1500 >>
 stream
 BT
-/F1 14 Tf
+/F1 13 Tf
 50 750 Td
 (PROGRAM 1: FACTORIAL OF A NUMBER) Tj
 0 -25 Td
-/F2 8.5 Tf
+/F1 9 Tf
+(Code:) Tj
+0 -15 Td
 (fact=function(num){) Tj
-0 -11 Td
+0 -12 Td
 (if (num==0||num==1){) Tj
-0 -11 Td
+0 -12 Td
 (return(1)) Tj
-0 -11 Td
+0 -12 Td
 (}else{) Tj
-0 -11 Td
-(return(num*fact(num-1))} Tj
-0 -11 Td
-(}) Tj
-0 -11 Td
+0 -12 Td
+(return(num*fact(num-1))) Tj
+0 -12 Td
+(})) Tj
+0 -12 Td
 () Tj
-0 -11 Td
-(cat("Enter a Number:") Tj
-0 -11 Td
+0 -12 Td
+(cat("Enter a Number:")) Tj
+0 -12 Td
 (num<-readLines(con="stdin",n=1)) Tj
-0 -11 Td
+0 -12 Td
 (num=as.numeric(num)) Tj
-0 -11 Td
+0 -12 Td
 (print(num)) Tj
-0 -11 Td
+0 -12 Td
 (result=fact(num)) Tj
-0 -11 Td
+0 -12 Td
 (cat("Factorial:",result,'\n')) Tj
-0 -22 Td
-/F1 11 Tf
+0 -30 Td
+/F1 10 Tf
 (OUTPUT (Input: 5):) Tj
-0 -18 Td
-/F2 9 Tf
+0 -15 Td
+/F1 9 Tf
 ([1] 5) Tj
-0 -11 Td
+0 -12 Td
 (Factorial: 120) Tj
 ET
 endstream
 endobj
-11 0 obj
-<< /Length 1250 >>
+10 0 obj
+<< /Length 1700 >>
 stream
 BT
-/F1 14 Tf
+/F1 13 Tf
 50 750 Td
 (PROGRAM 2: PALINDROME CHECKER) Tj
 0 -25 Td
-/F2 8 Tf
+/F1 9 Tf
+(Code:) Tj
+0 -12 Td
 (palin<-function(result){) Tj
-0 -10 Td
+0 -11 Td
 (og<-result) Tj
-0 -10 Td
+0 -11 Td
 (rev<-0) Tj
-0 -10 Td
+0 -11 Td
 (while(result>0){) Tj
-0 -10 Td
+0 -11 Td
 (a<-result%%10) Tj
-0 -10 Td
+0 -11 Td
 (rev<-(rev*10)+a) Tj
-0 -10 Td
-(result<-result%/%10)} Tj
-0 -10 Td
+0 -11 Td
+(result<-result%/%10)) Tj
+0 -11 Td
 (if(og==rev){) Tj
-0 -10 Td
-(cat("It is a pallindrome\n")) Tj
-0 -10 Td
-(}else{cat("It is not a pallindrome\n")}} Tj
-0 -10 Td
+0 -11 Td
+(cat("It is a pallindrome\\n")) Tj
+0 -11 Td
+(}else{cat("It is not a pallindrome\\n")}) Tj
+0 -11 Td
+(}) Tj
+0 -12 Td
 () Tj
-0 -10 Td
-(cat("Enter a Number:") Tj
-0 -10 Td
+0 -12 Td
+(cat("Enter a Number:")) Tj
+0 -11 Td
 (num<-readLines(con="stdin",n=1)) Tj
-0 -10 Td
+0 -11 Td
 (num=as.numeric(num)) Tj
-0 -10 Td
+0 -11 Td
 (print(num)) Tj
-0 -10 Td
+0 -11 Td
 (palin(num)) Tj
-0 -20 Td
-/F1 11 Tf
+0 -25 Td
+/F1 10 Tf
 (OUTPUT (Input: 121):) Tj
-0 -16 Td
-/F2 9 Tf
+0 -15 Td
+/F1 9 Tf
 ([1] 121) Tj
-0 -10 Td
+0 -12 Td
 (It is a pallindrome) Tj
 ET
 endstream
 endobj
-12 0 obj
-<< /Length 1350 >>
+11 0 obj
+<< /Length 1900 >>
 stream
 BT
-/F1 14 Tf
+/F1 13 Tf
 50 750 Td
 (PROGRAM 3: LINEAR REGRESSION) Tj
-0 -25 Td
-/F2 8 Tf
+0 -22 Td
+/F1 8.5 Tf
+(Code:) Tj
+0 -12 Td
 (data(mtcars)) Tj
-0 -10 Td
+0 -11 Td
 (model=lm(mpg~wt,data=mtcars)) Tj
-0 -10 Td
+0 -11 Td
 (print(summary(model))) Tj
-0 -10 Td
+0 -11 Td
 () Tj
-0 -10 Td
+0 -11 Td
 (newcars<-data.frame(wt=c(0.2,0.3,0.5))) Tj
-0 -10 Td
+0 -11 Td
 (predicted=predict(model,newdata=newcars)) Tj
-0 -10 Td
+0 -11 Td
 (results=data.frame(weight1000lbs=newcars$wt,) Tj
-0 -10 Td
+0 -11 Td
 (                   PREDICTED_MG=predicted)) Tj
-0 -10 Td
+0 -11 Td
 (print(results)) Tj
-0 -10 Td
+0 -11 Td
 () Tj
-0 -10 Td
+0 -11 Td
 (plot(mtcars$wt,mtcars$mpg,) Tj
-0 -10 Td
-(main="MPG VS WEIGHT", xlab="MPG",) Tj
-0 -10 Td
-(ylab="WEIGHT", pch=14, col="blue")) Tj
-0 -10 Td
+0 -11 Td
+(  main="MPG VS WEIGHT",xlab="MPG",) Tj
+0 -11 Td
+(  ylab="WEIGHT",pch=14,col="blue")) Tj
+0 -11 Td
 (abline(model,col="red",lwd=2)) Tj
-0 -20 Td
-/F1 10 Tf
+0 -22 Td
+/F1 9.5 Tf
 (OUTPUT:) Tj
-0 -14 Td
-/F2 7.5 Tf
+0 -12 Td
+/F1 8 Tf
 (Call: lm(formula = mpg ~ wt, data = mtcars)) Tj
-0 -9 Td
-(Coefficients: (Intercept)=37.29, wt=-5.34) Tj
-0 -9 Td
-(R-squared: 0.753) Tj
-0 -9 Td
+0 -10 Td
+(Coefficients:) Tj
+0 -10 Td
+(            Estimate Std. Error t value Pr(>|t|)) Tj
+0 -10 Td
+((Intercept)  37.2851     1.8776  19.858  < 2e-16) Tj
+0 -10 Td
+(wt           -5.3445     0.5591  -9.559  1.29e-10) Tj
+0 -10 Td
+(R-squared: 0.7528,  Adjusted R-sq: 0.7446) Tj
+0 -10 Td
 (Predictions: weight1000lbs | PREDICTED_MG) Tj
-0 -9 Td
-(1  0.2 | 38.02,  2  0.3 | 36.68,  3  0.5 | 34.00) Tj
-0 -9 Td
+0 -10 Td
+(1   0.2 | 38.017,   2   0.3 | 36.677,   3   0.5 | 33.996) Tj
+0 -10 Td
 ([Plot: MPG vs WEIGHT with regression line]) Tj
 ET
 endstream
 endobj
-13 0 obj
-<< /Length 1400 >>
+12 0 obj
+<< /Length 1700 >>
 stream
 BT
-/F1 14 Tf
+/F1 13 Tf
 50 750 Td
 (PROGRAM 4: LOGISTIC REGRESSION) Tj
-0 -22 Td
-/F2 7.5 Tf
+0 -20 Td
+/F1 8.5 Tf
+(Code:) Tj
+0 -11 Td
 (data<-read.csv("student_data.csv")) Tj
-0 -9 Td
+0 -11 Td
 (print(data)) Tj
-0 -9 Td
-(model<-glm(Result ~ Hours, data=data,) Tj
-0 -9 Td
-(           family=binomial)) Tj
-0 -9 Td
-(cat("Logistic Regression Model Summary:\n")) Tj
-0 -9 Td
+0 -11 Td
+(model<-glm(Result ~ Hours,data=data,) Tj
+0 -11 Td
+(            family=binomial)) Tj
+0 -11 Td
+() Tj
+0 -11 Td
+(cat("Logistic Regression Model Summary:\\n")) Tj
+0 -11 Td
 (print(summary(model))) Tj
-0 -9 Td
+0 -11 Td
 (new_data<-data.frame(Hours=5.5)) Tj
-0 -9 Td
-(probability<-predict(model, new_data,) Tj
-0 -9 Td
+0 -11 Td
+() Tj
+0 -11 Td
+(probability<-predict(model,new_data,) Tj
+0 -11 Td
 (                     type="response")) Tj
-0 -9 Td
-(cat("\n Predicted Probability of passing:",) Tj
-0 -9 Td
-(    probability,"\n")) Tj
-0 -9 Td
+0 -11 Td
+(cat("\\n Predicted Probability:",probability)) Tj
+0 -11 Td
 (prediction<-ifelse(probability>=0.5,1,0)) Tj
-0 -9 Td
+0 -11 Td
 (cat("Predicted Class(0=Fail,1=Pass):",) Tj
-0 -9 Td
-(    prediction,"\n")) Tj
-0 -9 Td
+0 -11 Td
+(    prediction,"\\n")) Tj
+0 -11 Td
 (class<-ifelse(prediction==1,"Pass","Fail")) Tj
-0 -9 Td
-(cat("Final Prediction:",class,"\n")) Tj
-0 -18 Td
-/F1 10 Tf
+0 -11 Td
+(cat("Final Prediction:",class,"\\n")) Tj
+0 -20 Td
+/F1 9.5 Tf
 (OUTPUT:) Tj
-0 -13 Td
-/F2 7.5 Tf
-(Call: glm(formula = Result ~ Hours, family=binomial)) Tj
-0 -9 Td
-(Coefficients: (Intercept)=-4.08, Hours=0.824) Tj
-0 -9 Td
-(Residual deviance: 38.23, AIC: 42.23) Tj
-0 -9 Td
+0 -12 Td
+/F1 8 Tf
+(Call: glm(formula = Result ~ Hours, family = binomial)) Tj
+0 -10 Td
+(Coefficients: (Intercept)=-4.0777, Hours=0.8240) Tj
+0 -10 Td
+(Residual deviance: 38.23 on 18 df,  AIC: 42.23) Tj
+0 -10 Td
+() Tj
+0 -10 Td
 (Predicted Probability of passing: 0.7342) Tj
-0 -9 Td
+0 -10 Td
 (Predicted Class: 1) Tj
-0 -9 Td
+0 -10 Td
 (Final Prediction: Pass) Tj
 ET
 endstream
 endobj
-14 0 obj
-<< /Length 1300 >>
+13 0 obj
+<< /Length 1600 >>
 stream
 BT
-/F1 14 Tf
+/F1 13 Tf
 50 750 Td
 (PROGRAM 5: VARIANCE, COVARIANCE & CORRELATION) Tj
-0 -25 Td
-/F2 8 Tf
+0 -22 Td
+/F1 8.5 Tf
+(Code:) Tj
+0 -12 Td
 (data(mtcars)) Tj
 0 -11 Td
 () Tj
@@ -255,53 +271,68 @@ BT
 0 -11 Td
 () Tj
 0 -11 Td
-(cat("Variance:\n")) Tj
+(cat("Variance:\\n")) Tj
 0 -11 Td
 (print(var(data_subset))) Tj
 0 -11 Td
 () Tj
 0 -11 Td
-(cat("\n\nCovariance Matrix:\n")) Tj
+(cat("\\n\\nCovariance Matrix:\\n")) Tj
 0 -11 Td
 (print(cov(data_subset))) Tj
 0 -11 Td
 () Tj
 0 -11 Td
-(cat("\n\nCorrelation Matrix:\n")) Tj
+(cat("\\n\\nCorrelation Matrix:\\n")) Tj
 0 -11 Td
 (print(cor(data_subset))) Tj
 0 -22 Td
-/F1 10 Tf
+/F1 9.5 Tf
 (OUTPUT:) Tj
-0 -14 Td
-/F2 7 Tf
+0 -12 Td
+/F1 7.5 Tf
 (Variance: mpg=36.32, wt=9.77, hp=4700.87) Tj
-0 -9 Td
-(Covariance: mpg-wt=-5.12, mpg-hp=-320.73, wt-hp=44.19) Tj
-0 -9 Td
-(Correlation: mpg-wt=-0.868, mpg-hp=-0.776, wt-hp=0.659) Tj
+0 -10 Td
+(Covariance Matrix:) Tj
+0 -10 Td
+(           mpg        wt         hp) Tj
+0 -10 Td
+(mpg   36.324  -5.117  -320.732) Tj
+0 -10 Td
+(wt    -5.117   9.770    44.193) Tj
+0 -10 Td
+(hp  -320.732  44.193  4700.867) Tj
+0 -10 Td
+(Correlation Matrix:) Tj
+0 -10 Td
+(           mpg       wt       hp) Tj
+0 -10 Td
+(mpg   1.0000  -0.8677  -0.7762) Tj
+0 -10 Td
+(wt   -0.8677   1.0000   0.6587) Tj
+0 -10 Td
+(hp   -0.7762   0.6587   1.0000) Tj
 ET
 endstream
 endobj
 xref
-0 15
+0 14
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000133 00000 n 
-0000000237 00000 n 
-0000000342 00000 n 
-0000000448 00000 n 
-0000000554 00000 n 
-0000000661 00000 n 
-0000000743 00000 n 
-0000000828 00000 n 
-0000001979 00000 n 
-0000003279 00000 n 
-0000004689 00000 n 
-0000006149 00000 n 
+0000000127 00000 n 
+0000000226 00000 n 
+0000000325 00000 n 
+0000000425 00000 n 
+0000000000 65535 f 
+0000000525 00000 n 
+0000000605 00000 n 
+0000002156 00000 n 
+0000003907 00000 n 
+0000005858 00000 n 
+0000007609 00000 n 
 trailer
-<< /Size 15 /Root 1 0 R >>
+<< /Size 14 /Root 1 0 R >>
 startxref
-7499
+9259
 %%EOF
