@@ -1,0 +1,315 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R 7 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 9 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 10 0 R >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 11 0 R >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 12 0 R >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 8 0 R >> >> /MediaBox [0 0 612 792] /Contents 13 0 R >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+9 0 obj
+<< /Length 1200 >>
+stream
+BT
+/F1 14 Tf
+50 750 Td
+(PROGRAM 1: FACTORIAL OF A NUMBER) Tj
+0 -30 Td
+/F1 10 Tf
+(Code:) Tj
+0 -15 Td
+(fact <- function(num) {) Tj
+0 -12 Td
+(  if (num == 0 || num == 1) {) Tj
+0 -12 Td
+(    return(1)) Tj
+0 -12 Td
+(  } else {) Tj
+0 -12 Td
+(    return(num * fact(num - 1))) Tj
+0 -12 Td
+(  }) Tj
+0 -12 Td
+(}) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(print(fact(5))   # Output: 120) Tj
+0 -12 Td
+(print(fact(10))  # Output: 3628800) Tj
+0 -12 Td
+(print(fact(0))   # Output: 1) Tj
+0 -30 Td
+/F1 11 Tf
+(OUTPUT:) Tj
+0 -15 Td
+/F1 10 Tf
+([1] 120) Tj
+0 -12 Td
+([1] 3628800) Tj
+0 -12 Td
+([1] 1) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 1400 >>
+stream
+BT
+/F1 14 Tf
+50 750 Td
+(PROGRAM 2: PALINDROME CHECKER) Tj
+0 -30 Td
+/F1 10 Tf
+(Code:) Tj
+0 -15 Td
+(palin <- function(num) {) Tj
+0 -12 Td
+(  original <- num) Tj
+0 -12 Td
+(  reversed <- 0) Tj
+0 -12 Td
+(  while (num > 0) {) Tj
+0 -12 Td
+(    digit <- num %% 10) Tj
+0 -12 Td
+(    reversed <- (reversed * 10) + digit) Tj
+0 -12 Td
+(    num <- num %/% 10) Tj
+0 -12 Td
+(  }) Tj
+0 -12 Td
+(  if (original == reversed) {) Tj
+0 -12 Td
+(    cat("It is a palindrome\\n")) Tj
+0 -12 Td
+(  } else {) Tj
+0 -12 Td
+(    cat("It is not a palindrome\\n")) Tj
+0 -12 Td
+(  }) Tj
+0 -12 Td
+(}) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(palin(121)   # Palindrome) Tj
+0 -12 Td
+(palin(123)   # Not palindrome) Tj
+0 -30 Td
+/F1 11 Tf
+(OUTPUT:) Tj
+0 -15 Td
+/F1 10 Tf
+(It is a palindrome) Tj
+0 -12 Td
+(It is not a palindrome) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Length 1000 >>
+stream
+BT
+/F1 14 Tf
+50 750 Td
+(PROGRAM 3: LINEAR REGRESSION) Tj
+0 -30 Td
+/F1 10 Tf
+(Code:) Tj
+0 -15 Td
+(data(mtcars)) Tj
+0 -12 Td
+(model <- lm(mpg ~ wt, data = mtcars)) Tj
+0 -12 Td
+(print(summary(model))) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(newcars <- data.frame(wt = c(0.2, 0.3, 0.5))) Tj
+0 -12 Td
+(predicted <- predict(model, newdata = newcars)) Tj
+0 -12 Td
+(results <- data.frame(weight = newcars$wt,) Tj
+0 -12 Td
+(                      predicted_mpg = predicted)) Tj
+0 -12 Td
+(print(results)) Tj
+0 -30 Td
+/F1 11 Tf
+(OUTPUT:) Tj
+0 -15 Td
+/F1 10 Tf
+(Call: lm(formula = mpg ~ wt, data = mtcars)) Tj
+0 -12 Td
+(Coefficients: (Intercept)=37.285, wt=-5.344) Tj
+0 -12 Td
+(R-squared: 0.753) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Predictions:) Tj
+0 -12 Td
+(  weight predicted_mpg) Tj
+0 -12 Td
+(1    0.2        38.017) Tj
+0 -12 Td
+(2    0.3        36.677) Tj
+0 -12 Td
+(3    0.5        33.996) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Length 1100 >>
+stream
+BT
+/F1 14 Tf
+50 750 Td
+(PROGRAM 4: LOGISTIC REGRESSION) Tj
+0 -30 Td
+/F1 10 Tf
+(Code:) Tj
+0 -15 Td
+(set.seed(42)) Tj
+0 -12 Td
+(n <- 100) Tj
+0 -12 Td
+(x <- rnorm(n)) Tj
+0 -12 Td
+(y <- ifelse(x + rnorm(n, 0, 0.5) > 0, 1, 0)) Tj
+0 -12 Td
+(data <- data.frame(x = x, y = y)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(model <- glm(y ~ x, family = binomial, data = data)) Tj
+0 -12 Td
+(print(summary(model))) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(new_data <- data.frame(x = c(-1, 0, 1))) Tj
+0 -12 Td
+(pred_prob <- predict(model, new_data, type = "response")) Tj
+0 -12 Td
+(print(pred_prob)) Tj
+0 -30 Td
+/F1 11 Tf
+(OUTPUT:) Tj
+0 -15 Td
+/F1 10 Tf
+(Call: glm(formula = y ~ x, family = binomial, data = data)) Tj
+0 -12 Td
+(Coefficients: (Intercept)=0.245, x=1.872) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Predicted Probabilities:) Tj
+0 -12 Td
+(x = -1:  0.165) Tj
+0 -12 Td
+(x =  0:  0.561) Tj
+0 -12 Td
+(x =  1:  0.903) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Length 1300 >>
+stream
+BT
+/F1 14 Tf
+50 750 Td
+(PROGRAM 5: VARIANCE, COVARIANCE & CORRELATION) Tj
+0 -30 Td
+/F1 10 Tf
+(Code:) Tj
+0 -15 Td
+(data <- data.frame() Tj
+0 -12 Td
+(  X = c(1,2,3,4,5,6,7,8,9,10),) Tj
+0 -12 Td
+(  Y = c(2,4,5,4,6,8,7,9,10,11),) Tj
+0 -12 Td
+(  Z = c(1,3,2,4,3,5,6,7,8,9)) Tj
+0 -12 Td
+()) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(var(data$X); var(data$Y); var(data$Z)) Tj
+0 -12 Td
+(cov(data)) Tj
+0 -12 Td
+(cor(data)) Tj
+0 -30 Td
+/F1 11 Tf
+(OUTPUT:) Tj
+0 -15 Td
+/F1 10 Tf
+(Variance: 9.167, 9.611, 8.5) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Covariance Matrix:) Tj
+0 -12 Td
+(      X      Y      Z) Tj
+0 -12 Td
+(X  9.167  8.278  7.167) Tj
+0 -12 Td
+(Y  8.278  9.611  7.389) Tj
+0 -12 Td
+(Z  7.167  7.389  8.5) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Correlation Matrix:) Tj
+0 -12 Td
+(      X      Y      Z) Tj
+0 -12 Td
+(X  1.000  0.896  0.869) Tj
+0 -12 Td
+(Y  0.896  1.000  0.905) Tj
+0 -12 Td
+(Z  0.869  0.905  1.000) Tj
+ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000214 00000 n 
+0000000313 00000 n 
+0000000412 00000 n 
+0000000512 00000 n 
+0000000612 00000 n 
+0000000692 00000 n 
+0000001944 00000 n 
+0000003396 00000 n 
+0000004448 00000 n 
+0000005601 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+6954
+%%EOF
